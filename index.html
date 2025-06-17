@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wedding Invitation - Ghaniya & Imran</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&family=Open+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Cookie&family=Rochester&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            /* font-family: 'Open Sans', sans-serif; */
+            background: url('bg2-blur.jpg') no-repeat center center/cover;
+            background-color: #f6f2f0;
+            color: #a67c52;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 24px;
+            
+        }
+
+        .headings {
+            font-family: "Limelight", sans-serif;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            /* margin-bottom: 1px; */
+            font-weight: 400;
+            margin: 5px 0px 5px 0px;
+        }
+
+        .subHeadings {
+            /* font-family: "Limelight", sans-serif; */
+            font-family: "Lexend", sans-serif;
+            /* font-optical-sizing: auto; */
+            font-weight: 300;
+            /* font-style: normal; */
+            font-size: 0.8rem;
+            /* text-transform: uppercase; */
+            /* margin-bottom: 7px; */
+            font-weight: 400;
+            margin: 5px 0px 5px 0px;
+        }
+
+        .invite {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 40px 24px;
+            border-radius: 12px;
+            max-width: 420px;
+            width: 100%;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 90vh;
+        }
+
+        .section {
+            width: 100%;
+        }
+
+        .left {
+            text-align: left;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .title {
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+            font-weight: 500;
+        }
+
+        .names {
+            /* font-family: 'Great Vibes', cursive; */
+            font-size: 2.8rem;
+            /* color: #a67c52; */
+            line-height: 1.2;
+            margin-bottom: 8px;
+            /* font-family: "Rochester", cursive; */
+            font-family: "Berkshire Swash", serif;
+            font-weight: 400;
+            font-style: normal;
+            color: #a67c52;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .and {
+            font-family: "Berkshire Swash", serif;
+            font-size: 1.8rem;
+            margin: 8px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .details {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            margin-top: 32px;
+        }
+
+        .details strong {
+            display: block;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            margin-bottom: 4px;
+        }
+
+        .footer {
+            font-family: 'Great Vibes', cursive;
+            font-size: 1.4rem;
+            /* color: #444; */
+            margin-top: 40px;
+            /* margin-bottom: 10px; */
+            color: #a67c52;
+        }
+
+        .curs {
+            font-family: 'Great Vibes', cursive;
+            font-size: 1rem;
+            color: #444;
+            /* margin-top: 40px; */
+            /* margin-bottom: 10px; */
+        }
+
+        .glow-box {
+            border: 2px solid #f4dc86;
+            animation: pulseBorder 2s infinite;
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        @keyframes pulseBorder {
+            0% {
+                box-shadow: 0 0 5px #f4dc86;
+            }
+
+            50% {
+                box-shadow: 0 0 15px #f4dc86;
+            }
+
+            100% {
+                box-shadow: 0 0 5px #f4dc86;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .invite {
+                padding: 28px 16px;
+                min-height: unset;
+            }
+
+            .names {
+                font-size: 4rem;
+            }
+
+            .footer {
+                font-size: 1.1rem;
+                margin-top: 10px;
+                /* margin-bottom: 8px; */
+                color: #a67c52;
+            }
+        }
+
+        .gold-border-box {
+            position: relative;
+            padding: 20px;
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        /* Animated golden border */
+        .gold-border-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 1px solid transparent;
+            border-radius: 12px;
+            box-sizing: border-box;
+            z-index: 1;
+            pointer-events: none;
+
+            background: linear-gradient(90deg,
+                    #FFD700,
+                    /* Gold */
+                    #FFB300,
+                    /* Amber */
+                    #FFC107,
+                    /* Lighter gold */
+                    #FFD700,
+                    /* Gold */
+                    #FFA000,
+                    /* Rich gold */
+                    #FFD700);
+            background-size: 400% 400%;
+            animation: animateGoldBorder 5s linear infinite;
+
+            -webkit-mask:
+                linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            padding: 2px;
+        }
+
+        @keyframes animateGoldBorder {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .map-button {
+            padding: 2px 8px;
+            background-color: #d4af37;
+            /* gold */
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s;
+            font-family: inherit;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .map-button:hover {
+            background-color: #b58e27;
+            transform: scale(1.03);
+        }
+
+        .fade-box {
+            background: url('inner2.jpg') no-repeat center center/cover;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    
+    <!-- <div class="invite glow-box"> -->
+    <div class="invite gold-border-box fade-box">
+
+      
+        <div class="headings">The Wedding Of</div>
+        <div style="line-height: 0.1;">
+            <div class="names">Sana </div>
+            <div class="and" style="margin-left: 40px;">&amp;</div>
+            <div class="names" style="margin-left: 60px;">Ramshid</div>
+        </div>
+
+
+
+        <div class="headings">
+            Date
+        </div>
+        <p class="subHeadings">22<sup>nd</sup> June 2025 | Sunday<br /></p>
+
+        <div class="headings">
+            Venue
+        </div>
+        <p class="subHeadings">
+            <a href="https://maps.app.goo.gl/kut82e37D8EbSYZTA" class="map-button">Chalil, Keezhal 🗺️</a>
+            <a href="tel:+918113017259" class="map-button">8113017259 📞</a>
+        </p>
+        <p class="subHeadings">
+
+        </p>
+        <p class="curs">"And We created you in pairs" | Quran 78:8</p>
+        <div class="footer">Insha Allah</div>
+    </div>
+    
+</body>
+
+</html>

@@ -26,11 +26,12 @@
             justify-content: center;
             align-items: center;
             padding: 24px;
-            
+
         }
 
         .headings {
-            font-family: "Limelight", sans-serif;
+            /* font-family: "Limelight", sans-serif; */
+            font-family: "Lexend", sans-serif;
             font-size: 0.8rem;
             text-transform: uppercase;
             /* margin-bottom: 1px; */
@@ -49,6 +50,11 @@
             /* margin-bottom: 7px; */
             font-weight: 400;
             margin: 5px 0px 5px 0px;
+        }
+
+        .couple {
+            background: url('couple.jpg') no-repeat center center/cover;
+            background-color: #f6f2f0;
         }
 
         .invite {
@@ -76,13 +82,14 @@
             text-align: center;
         }
 
+        /* 
         .title {
             font-size: 0.8rem;
             letter-spacing: 1px;
             text-transform: uppercase;
             margin-bottom: 24px;
             font-weight: 500;
-        }
+        } */
 
         .names {
             /* font-family: 'Great Vibes', cursive; */
@@ -105,7 +112,7 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
 
-        .details {
+        /* .details {
             font-size: 0.9rem;
             line-height: 1.7;
             margin-top: 32px;
@@ -117,7 +124,7 @@
             text-transform: uppercase;
             font-size: 0.75rem;
             margin-bottom: 4px;
-        }
+        } */
 
         .footer {
             font-family: 'Great Vibes', cursive;
@@ -172,6 +179,7 @@
                 margin-top: 10px;
                 /* margin-bottom: 8px; */
                 color: #a67c52;
+                align-self: flex-end;
             }
         }
 
@@ -269,45 +277,61 @@
                 opacity: 1;
             }
         }
-        
+
+        .image-container {
+            width: 300px;
+            height: 320px;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 
 <body>
 
-    
+
     <!-- <div class="invite glow-box"> -->
     <div class="invite gold-border-box fade-box">
 
-      
+
         <div class="headings">The Wedding Of</div>
         <div style="line-height: 0.1;">
             <div class="names">Sana </div>
             <div class="and" style="margin-left: 40px;">&amp;</div>
             <div class="names" style="margin-left: 60px;">Ramshid</div>
         </div>
-
-
-
-        <div class="headings">
-            Date
+        <div class="image-container">
+            <img src="couple.jpg" alt="couple" />
         </div>
+
+        <p class="curs">"And We created you in pairs" | Quran 78:8</p>
+
+        <!-- <div class="headings">
+            Date
+        </div> -->
         <p class="subHeadings">22<sup>nd</sup> June 2025 | Sunday<br /></p>
 
-        <div class="headings">
+        <!-- <div class="headings">
             Venue
-        </div>
+        </div> -->
         <p class="subHeadings">
             <a href="https://maps.app.goo.gl/kut82e37D8EbSYZTA" class="map-button">Chalil, Keezhal 🗺️</a>
-            <a href="tel:+918113017259" class="map-button">8113017259 📞</a>
+
+            <!-- <a href="tel:+918113017259" class="map-button">8113017259 📞</a> -->
         </p>
+        <p class="subHeadings"><a href="tel:+918113017259" class="map-button">8113017259 📞</a></p>
         <p class="subHeadings">
 
         </p>
-        <p class="curs">"And We created you in pairs" | Quran 78:8</p>
+
         <div class="footer">Insha Allah</div>
     </div>
-    
+
 </body>
 
 </html>
